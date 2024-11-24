@@ -3,11 +3,11 @@ import Btn from "../Btn/Btn.jsx";
 import styles from "./AddTask.module.css";
 
 export default function AddTask({
-  handleAddClick,
   input,
   inputError,
   inputRef,
   handleInputChange,
+  handleAddClick,
 }) {
   return (
     <div className={`${styles.addTask} flex-col`}>
@@ -15,8 +15,8 @@ export default function AddTask({
         input={input}
         inputError={inputError}
         handleInputChange={handleInputChange}
-        handleAddClick={handleAddClick}
         inputRef={inputRef}
+        handleAddClick={handleAddClick}
       >
         Add a new task
       </Input>

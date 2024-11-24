@@ -1,0 +1,13 @@
+.taskList {
+  margin-top: 2em;
+  padding: 0;
+}
+
+.task {
+  margin: 1em 0;
+  padding: 0.5em;
+  background: var(--color-card-bg);
+  border-radius: var(--radius);
+  justify-content: space-between;
+  box-shadow: var(--bx-shadow);
+}

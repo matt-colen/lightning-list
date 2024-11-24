@@ -87,11 +87,11 @@ export default function App() {
     <div className="container flex-col">
       <Header>Lightning List</Header>
       <AddTask
-        handleAddClick={handleAddClick}
         input={input}
         inputError={inputError}
         handleInputChange={handleInputChange}
         inputRef={inputRef}
+        handleAddClick={handleAddClick}
       />
       <Filter />
       <TaskList

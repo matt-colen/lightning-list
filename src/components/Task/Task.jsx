@@ -1,7 +1,7 @@
 import React from "react";
 import { MdOutlineEdit } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
-import Button from "../Btn/Btn.jsx";
+import Btn from "../Btn/Btn.jsx";
 import styles from "./Task.module.css";
 
 export default function Task({
@@ -22,15 +22,15 @@ export default function Task({
         <input
           className={styles.taskCheckbox}
           data-id={task.id}
-          onClick={handleTaskCompletion}
+          onChange={handleTaskCompletion}
           type="checkbox"
           checked={task.complete}
         />
         <textarea
           data-id={task.id}
-          className={`${
-            styles.taskComplete && "task-checked"
-          } styles.taskInput flex`}
+          className={`${task.complete && styles.taskChecked} ${
+            styles.taskInput
+          } flex`}
           value={task.task}
           onChange={handleTaskEdit}
           ref={subInputRef}
@@ -38,12 +38,12 @@ export default function Task({
         />
       </div>
       <div className={`${styles.taskBtns} flex`}>
-        <Button onClick={handleEditClick} data-id={task.id}>
+        <Btn onClick={handleEditClick} data-id={task.id}>
           <MdOutlineEdit />
-        </Button>
-        <Button onClick={handleDeleteClick} data-id={task.id}>
+        </Btn>
+        <Btn onClick={handleDeleteClick} data-id={task.id}>
           <MdDelete />
-        </Button>
+        </Btn>
       </div>
     </>
   );

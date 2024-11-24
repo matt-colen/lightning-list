@@ -7,10 +7,12 @@
   --color-card-bg: #eee;
   --color-txt-primary: #2c2c2c;
   --color-txt-strikethrough: #aaa;
+  --bx-shadow: 0 4px 5px var(--color-card-bg);
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body,
@@ -36,27 +38,28 @@ svg {
 
 .container {
   padding: 5em 3%;
-  max-width: 700px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 @media (min-width: 700px) {
   .container {
     padding: 5em 10%;
+    max-width: 700px;
   }
 }
 
 /* Utility  */
+.flex {
+  display: flex;
+}
+
 .flex-col {
   display: flex;
   flex-flow: column;
 }
 
-.flex {
-  display: flex;
-}
-
-/* Task List  */
-.task-list {
-  margin-top: 2em;
+.flex-fully-centered {
+  justify-content: center;
+  align-items: center;
 }

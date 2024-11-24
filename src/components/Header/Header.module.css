@@ -1,9 +1,14 @@
 .title {
-  justify-content: center;
-  align-items: center;
+  flex-flow: column;
   gap: 0.5em;
 }
 
 .logo {
-  width: 22px;
+  width: 14px;
+}
+
+@media (min-width: 700px) {
+  .title {
+    flex-flow: row;
+  }
 }

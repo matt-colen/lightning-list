@@ -1,4 +1,5 @@
 import Task from "../Task/Task.jsx";
+import styles from "./TaskList.module.css";
 
 export default function TaskList({
   tasks,
@@ -8,7 +9,7 @@ export default function TaskList({
 }) {
   const taskElements = tasks.map((task) => {
     return (
-      <li key={task.id} id={task.id} className="task flex">
+      <li key={task.id} id={task.id} className={`${styles.task} flex`}>
         <Task
           task={task}
           handleTaskEdit={handleTaskEdit}
@@ -19,5 +20,5 @@ export default function TaskList({
     );
   });
 
-  return <ul className="task-list">{taskElements}</ul>;
+  return <ul className={styles.taskList}>{taskElements}</ul>;
 }

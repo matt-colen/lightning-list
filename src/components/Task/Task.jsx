@@ -37,11 +37,11 @@ export default function Task({
           rows="1"
         />
       </div>
-      <div className={`${styles.taskBtns} flex`}>
-        <Btn onClick={handleEditClick} data-id={task.id}>
+      <div className="flex">
+        <Btn onClick={handleEditClick} id={task.id}>
           <MdOutlineEdit />
         </Btn>
-        <Btn onClick={handleDeleteClick} data-id={task.id}>
+        <Btn onClick={handleDeleteClick} id={task.id}>
           <MdDelete />
         </Btn>
       </div>

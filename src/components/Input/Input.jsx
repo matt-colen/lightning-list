@@ -24,7 +24,7 @@ export default function Input({
         ref={inputRef}
       />
       {inputError && (
-        <p className={styles.error}>Please enter a new task to create</p>
+        <p className={styles.error}>Please enter a new task above</p>
       )}
     </>
   );

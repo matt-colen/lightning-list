@@ -20,7 +20,7 @@ export default function AddTask({
       >
         Add a new task
       </Input>
-      <Btn type="primary" task="add" handleAddClick={handleAddClick}>
+      <Btn type="primary" task="add" onClick={handleAddClick}>
         Add
       </Btn>
     </div>

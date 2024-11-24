@@ -74,13 +74,9 @@ export default function App() {
   };
 
   const handleDeleteClick = (e) => {
-    const { id } = e.target.dataset;
-    setTasks((prev) => {
-      const targetIndex = prev.findIndex((task) => task.id === id);
-      const updatedTasks = [...prev];
-      updatedTasks.splice(targetIndex, 1);
-      return updatedTasks;
-    });
+    const id = e.currentTarget.dataset.id;
+    console.log(id);
+    setTasks((prev) => prev.filter((task) => task.id !== id));
   };
 
   return (

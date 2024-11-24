@@ -1,0 +1,36 @@
+.task {
+  margin: 0.75em 0;
+  padding: 0.5em;
+  background: var(--color-card-bg);
+  border-radius: var(--radius);
+  justify-content: space-between;
+  box-shadow: 0 2px 1px var(--color-card-bg);
+}
+
+.taskText {
+  align-items: center;
+  width: 100%;
+}
+
+.taskCheckbox {
+  height: 14px;
+  width: 14px;
+  accent-color: var(--color-cta);
+}
+
+.taskInput {
+  font-size: 1rem;
+  border: none;
+  background: transparent;
+  resize: none;
+  width: 100%;
+}
+
+.taskChecked {
+  text-decoration: line-through;
+  color: var(--color-txt-strikethrough);
+}
+
+.taskText {
+  gap: 0.3em;
+}

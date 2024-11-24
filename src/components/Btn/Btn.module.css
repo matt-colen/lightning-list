@@ -1,0 +1,20 @@
+.btn {
+  background: none;
+  border: none;
+  padding: 0.7em 1em;
+  border-radius: var(--radius);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: var(--color-txt-primary);
+}
+
+.btn:hover {
+  opacity: 0.9;
+  background: var(--color-cta-hover);
+}
+
+.btnPrimary {
+  margin-top: 0.2em;
+  background: var(--color-cta);
+}

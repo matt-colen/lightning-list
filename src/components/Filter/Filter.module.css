@@ -1,19 +1,23 @@
 .filter {
   margin-top: 1em;
   position: relative;
+  gap: .5em;
 }
 
 .filterOptions {
-  background: var(--color-card-bg);
+  border: 3px solid var(--color-filter-bg);
   align-items: start;
   padding: 0.5em;
   gap: 0.5em;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  border-radius: var(--radius);
 }
 
 .filterOpt {
-  gap: 0.25em;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.filterBtn {
+  justify-content: end;
+  padding: .5em;
 }

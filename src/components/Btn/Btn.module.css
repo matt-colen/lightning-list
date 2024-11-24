@@ -9,7 +9,7 @@
 }
 
 .btnPrimary {
-  padding: 0.7em 1em;
+  padding: 0.7em 1.4em;
   margin-top: 0.2em;
   background: var(--color-cta);
   box-shadow: var(--bx-shadow);

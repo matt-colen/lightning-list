@@ -4,10 +4,11 @@
   --color-light: #fff;
   --color-cta: hsl(47, 100%, 62%);
   --color-cta-hover: hsl(47, 100%, 52%);
-  --color-card-bg: #eee;
+  --color-card-bg: hsl(49, 14%, 16%);
+  --color-filter-bg: hsl(49, 14%, 16%);
   --color-txt-primary: #2c2c2c;
   --color-txt-strikethrough: #aaa;
-  --bx-shadow: 0 4px 5px var(--color-card-bg);
+  --bx-shadow: 0 4px 5px var(--color-light);
 }
 
 * {
@@ -31,6 +32,12 @@ p {
   line-height: 1.4;
 }
 
+input[type="checkbox"] {
+  height: 14px;
+  width: 14px;
+  accent-color: var(--color-cta);
+}
+
 svg {
   height: 14px;
   width: 14px;
@@ -45,7 +52,7 @@ svg {
 @media (min-width: 700px) {
   .container {
     padding: 5em 10%;
-    max-width: 700px;
+    max-width: 800px;
   }
 }
 

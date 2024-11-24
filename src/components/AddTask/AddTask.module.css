@@ -1,4 +1,11 @@
 .addTask {
-  margin-top: 3em;
-  gap: 1em;
+  flex-flow: column;
+  margin: 3em 0 1em;
+  gap: .5em;
+}
+
+@media (min-width: 700px) {
+  .addTask {
+    flex-flow: row;
+  }
 }

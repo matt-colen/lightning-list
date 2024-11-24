@@ -10,7 +10,7 @@ export default function AddTask({
   handleAddClick,
 }) {
   return (
-    <div className={`${styles.addTask} flex-col`}>
+    <div className={`${styles.addTask} flex`}>
       <Input
         input={input}
         inputError={inputError}

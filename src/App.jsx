@@ -74,8 +74,7 @@ export default function App() {
   };
 
   const handleDeleteClick = (e) => {
-    const id = e.currentTarget.dataset.id;
-    console.log(id);
+    const { id } = e.currentTarget.dataset;
     setTasks((prev) => prev.filter((task) => task.id !== id));
   };
 

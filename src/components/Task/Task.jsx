@@ -37,7 +37,7 @@ export default function Task({
           rows="1"
         />
       </div>
-      <div className="flex">
+      <div className={`${styles.taskBtns} flex`}>
         <Btn onClick={handleEditClick} id={task.id}>
           <MdOutlineEdit />
         </Btn>
